@@ -27,7 +27,6 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elmcast/elm-vim'
 Plugin 'vim-erlang/vim-erlang-runtime'
-Plugin 'pasky/claude.vim'
 Plugin 'ojroques/vim-oscyank'
 "Plugin 'w0rp/ale' 				# vim8+ or neovim
 call vundle#end()
