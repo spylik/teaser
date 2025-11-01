@@ -6,10 +6,12 @@ colorscheme elflord
 " ==================
 " Key mapping
 " ==================
-map <F9> :set encoding=koi8-r<CR>
-map <F10> :set encoding=8bit-cp1251<CR>
-map <F11> :set encoding=utf-8<CR>
-map <F12> :w !pbcopy
+nmap <F9> :set encoding=koi8-r<CR>
+nmap <F10> :set encoding=8bit-cp1251<CR>
+nmap <F11> :set encoding=utf-8<CR>
+"nmap <F12> :w !pbcopy
+nnoremap <F12> :%y+<CR>:OSCYankRegister +<CR>
+vnoremap <F12> <Plug>OSCYankVisual
 nnoremap <F5> :let _s=@/<Bar>:%s/\t/\=repeat(' ', &tabstop)/ge<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 " ==================
@@ -25,6 +27,8 @@ Plugin 'elixir-lang/vim-elixir'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'elmcast/elm-vim'
 Plugin 'vim-erlang/vim-erlang-runtime'
+Plugin 'pasky/claude.vim'
+Plugin 'ojroques/vim-oscyank'
 "Plugin 'w0rp/ale' 				# vim8+ or neovim
 call vundle#end()
 filetype plugin indent on

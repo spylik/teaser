@@ -91,13 +91,6 @@ if (-r $HOME/bin/rbenvWrap) then
 	eval `rbenvWrap init -`
 endif
 
-setenv PATH /opt/homebrew/opt/make/libexec/gnubin:$PATH
+setenv PATH /opt/homebrew/opt:$PATH
 setenv PATH /opt/homebrew/opt/openssl@3/bin:$PATH
-setenv PATH /opt/homebrew/opt/node@14/bin:$PATH
-
-#setenv PATH /opt/homebrew/opt/python@3.9/libexec/bin:$PATH
-#setenv PATH /opt/homebrew/opt/openssl@1.1/bin:$PATH
-#setenv LDFLAGS -L/opt/homebrew/opt/openssl@1.1/lib
-#setenv CPPFLAGS -I/opt/homebrew/opt/openssl@1.1/include
-
-#setenv PATH /usr/local/opt/terraform@0.12/bin:$PATH
+setenv PATH /Users/spyl/Library/Python/3.9/bin:$PATH
